@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+   <!-- Page Link -->
+    <a href="test.html">Next Page</a>
+    <a href="home.html">Home Page</a>
+
+    <!-- Summay and Dialog -->
+    <div>
+    <details>
+        <summary> title likha hoy</summary>
+        <p>baki summary part ekhan e likha hoy</p>
+    </details>
+    </div>
+    <br>
+
+    <div>
+    <h2>Dialog element</h2>
+
+    <dialog id="myDialog">
+        <p>This is Dialog</p>
+        <button onclick="closeDialog()">Close</button>
+    </dialog>
+
+    <button onclick="openDialog()">Open Dialog Box</button>
+</div>
+
+<script>
+function openDialog() {
+    document.getElementById("myDialog").showModal();
+}
+
+function closeDialog() {
+    document.getElementById("myDialog").close();
+}
+</script>
+
+<!-- Multimedia section -->
+
+    <br>
+    <h1>Multimedia</h1>
+    <div>
+        <img src="zenitsu-demon-slayer.jpg" alt="profile" height="200" width="200">
+        <!-- alter dea hoy pic load na hole , ki pic chilo seta bujhabe -->
+         <!-- ইমেজ ফাইল একই ফোল্ডারে আছে,
+        কিন্তু path-এ Media_HTML prefix দেওয়া আছে যা সমস্যা সৃষ্টি করছে। 
+        এছাড়াও HTML-এ forward slash / ব্যবহার করতে হয়। -->
+    </div>
+    <br>
+
+    <div>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4"> //fpr mp4 videos
+    </div>
+    <br>
+    <div>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg"> //for mp3 audio
+        </audio>
+    </div>
+    <br>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
+         frameborder="0" 
+         allow="accelerometer; 
+         autoplay; clipboard-write; 
+         encrypted-media; 
+         gyroscope; picture-in-picture" 
+         allowfullscreen></iframe>
+    </div>
+</body>
+</html>
