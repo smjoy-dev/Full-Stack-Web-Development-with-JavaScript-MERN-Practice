@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Type 1  Colors, Height, Width, Min-Height, Min-Width | Box Model */
+#red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+.box{
+    background-color: #008724;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;  /* height/width -style-color */
+    border-radius: 10px; /* border ke round kora */ 
+    min-width: 120px;
+    min-height: 120px;
+    /* padding: 20px;
+    margin: 10px; */
+    padding: 20px 10px 20px 10px; /*  top right bottom left - clockwise */
+    margin: 10px 20px 10px 0px;
+    
+}
+
+
+/* Type 2 input*/
+
+/* সব email input এর জন্য */
+input[type="email"]{
+    border: 2px solid red;
+    display: block;
+}
+/* শুধু second input এর জন্য  id specific kora*/
+#email2{
+    border: 2px solid blue;
+    display: block;
+}
+
+
+/* Type 3 Display: Block, Inline-Block, Inline*/
+.box1{
+    background-color: rgb(197, 46, 46);
+    padding: 10px; /* eigula diye 3ta box er moddhe space deya hoyese */
+    margin: 5px;
+    /* display: none; akhon kono box e show korbe na */
+    /* display: inline; akhon sob box ek line e show korbe but height width kaj korbe na */
+    /*display: block; akhon sob box ek line e show korbe na */
+     display: inline-block; /*akhon sob box ek line e show korbe but height width kaj korbe */
+}
