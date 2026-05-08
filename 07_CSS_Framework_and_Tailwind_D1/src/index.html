@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+    </h1>
+
+    <div class="bg-red-600 p-5 mt-5 text-amber-50 min-h-0">Hello Visitor</div>
+
+    <!-- tailwind css e h1 h2 p tag er kono size thake na 
+ set kore nite hoy -->
+    <div class="flex flex-col-reverse border-2 border-blue-800 p-1">
+        <p class="text-base ">hello this is paragraph</p>
+        <h2>Heading 2</h2>
+        <!-- automatically apply in h2 base from input.css -->
+        <h1 class="text-4xl text-center text-blue-400 text-shadow">heading1</h1>
+        <!-- text shadow from input.css file utilities -->
+    </div>
+
+    <!-- full screen er half half nea -->
+    <div class="flex">
+        <div class="bg-green-700 p-5 w-1/2 ">q1</div>
+        <div class="bg-orange-500 p-5 w-1/2 z-1">q2</div>
+    </div>
+
+    <!-- overlapping and Customization-->
+    <div class=" -mt-5 flex justify-center">
+        <div class="bg-[var(--primary-color)] p-10 ">q1</div>
+        <!-- set color using css variable in input.css file -->
+        <div class="bg-orange-700 p-10 rotate-45">q2</div>
+        <div class="bg-orange-900 p-10 z-2 w-[20px] h-[15px]">q2</div>
+        <!-- w-[20px] h-[15px] this is Arbitrary Values -->
+    </div>
+
+    <!-- flex wrap for full responsive -->
+    <div class=" mt-5 flex justify-between flex-wrap">
+        <div class="bg-orange-200 p-10 ">q1</div>
+        <div class="bg-orange-300 p-10 ">q2</div>
+        <div class="bg-orange-400 p-10 ">q3</div>
+        <div class="bg-orange-500 p-10 ">q4</div>
+        <div class="bg-orange-600 p-10 ">q5</div>
+        <div class="bg-orange-700 p-10 ">q6</div>
+        <div class="bg-orange-800 p-10 ">q7</div>
+    </div>
+
+    <!-- form -->
+    <div class="mt-5 ml-5">
+        <input type="text" placeholder="Enter your name"
+            class="p-2 border border-gray-400 rounded-lg bg-white focus:outline-none
+            focus:ring-2 focus:ring-blue-500">
+
+    </div>
+
+    <!-- For Button setted by custom component in input.css file -->
+    <div class="flex justify-center mt-5">
+        <button class="btn-primary">Save</button>
+    </div>
+
+    <!-- border property -->
+    <div class="bg-blue-600 p-10 w-1/2 mt-5 rounded-lg border-4 border-fuchsia-700">q3</div>
+</body>
+
+</html>
