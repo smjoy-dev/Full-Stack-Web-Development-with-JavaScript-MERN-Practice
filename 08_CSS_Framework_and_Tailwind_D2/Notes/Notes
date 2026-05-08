@@ -1,0 +1,74 @@
+In Tailwind CSS, you don’t usually override classes directly like traditional CSS.
+
+Instead, you customize Tailwind using `tailwind.config.js`. ey file ke root folder e rakhte hobe , src folder na
+
+You can:
+
+- Change default colors
+- Modify spacing scale
+- Change breakpoints
+- Adjust font sizes
+
+Then add @config "../../tailwind.config.js"; this in inout.css file
+
+
+----------------------------
+JIT = Just-In-Time engine in Tailwind CSS.
+It uses tree shaking to reduce the bundle size.
+----------------------------
+## `tailwind.config.js`
+
+- config শুধু value define করে
+- component বানায় না 
+
+Theme define (global design system)
+
+color: primary, secondary
+spacing, font, breakpoint
+
+ project জুড়ে consistent use
+
+use: same value everywhere দরকার
+
+---
+
+##  `@layer base`
+
+default style (auto apply)
+
+ h1, p, body style
+
+use: basic reset / default look
+
+---
+
+##  `@layer components`
+
+reusable UI class
+
+ `.btn`, `.card`
+
+use: same design বারবার লাগবে
+
+---
+
+## `@layer utilities`
+
+custom small helper class
+
+`.text-shadow`, `.flex-center`
+
+use: Tailwind এ না থাকলে add করা
+
+---
+
+##  `:root` (CSS variable)
+
+dynamic value control
+
+theme switch (dark/light)
+
+use: runtime change দরকার হলে
+
+
+

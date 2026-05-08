@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root{
+    --primary-color: #409c2d;
+    --secondary-color: #fbbf24;
+
+}
+/* onk gulu utility class niye kicu banaite gele input.css use krbo.  */
+/* otherwise for custom css config.js  */
+/* Custom style */
+/* utilities > components > base */
+/* components = ready design block */
+@layer components{
+    .btn-primary{
+        @apply bg-[var(--primary-color)] text-white px-4 py-2 rounded-lg hover:bg-[var(--secondary-color)] transition-colors duration-300;
+    }
+}
+
+/* base = basic default style */
+@layer base{
+    h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+/* utilities = small shortcut classes */
+@layer utilities{
+    .text-shadow{
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+}
