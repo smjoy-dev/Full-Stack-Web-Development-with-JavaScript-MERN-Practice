@@ -1,0 +1,160 @@
+SEO-friendly HTML 
+---
+
+#  1. Page Head (SEO Core Tags)
+
+ এগুলো `<head>` এর ভিতরে থাকে — সবচেয়ে গুরুত্বপূর্ণ SEO part
+
+```html
+<head>
+  <title>Best Web Development Course in Bangladesh</title>
+  <meta name="description" content="Learn web development with real projects">
+  <meta name="keywords" content="web dev, HTML, CSS, JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
+
+###  Important Tags
+
+* `<title>` → Google search result এ main title
+* `<meta name="description">` → search result এর description
+* `<meta name="keywords">` → এখন কম important, but okay
+* `<meta name="viewport">` → mobile friendly (very important)
+
+---
+
+# 🔹 2. Semantic Layout Tags (Google structure বুঝে)
+
+ এগুলো দিয়ে page structure clear হয়
+
+```html
+<header>Header content</header>
+<nav>Menu links</nav>
+<main>Main content</main>
+<section>Section</section>
+<article>Blog / Post</article>
+<aside>Sidebar</aside>
+<footer>Footer</footer>
+```
+
+###  Description
+
+* `<header>` → top part (logo, intro)
+* `<nav>` → navigation/menu
+* `<main>` → main content (1টা page এ 1টা)
+* `<section>` → content block/division
+* `<article>` → independent content (blog, news)
+* `<aside>` → side content (ads, sidebar)
+* `<footer>` → bottom info
+
+---
+
+#  3. Heading Tags (VERY IMPORTANT)
+
+```html
+<h1>Main Title</h1>
+<h2>Sub Title</h2>
+<h3>Sub section</h3>
+```
+
+###  Rule
+
+* `<h1>` → page এ শুধু 1টা (most important keyword)
+* `<h2-h6>` → hierarchy maintain করে
+
+  Google structure বুঝতে headings খুব important
+
+---
+
+#  4. Text Content Tags
+
+```html
+<p>This is paragraph</p>
+<strong>Important</strong>
+<em>Emphasis</em>
+```
+
+###  Description
+
+* `<p>` → paragraph
+* `<strong>` → important (SEO weight বেশি)
+* `<em>` → emphasis
+
+---
+
+#  5. Image SEO
+
+```html
+<img src="image.jpg" alt="Web development course">
+```
+
+###  Important
+
+* `alt` → MUST use
+   Google image বুঝে alt text দিয়ে
+
+---
+
+#  6. Link (Anchor Tag)
+
+```html
+<a href="https://example.com">Learn More</a>
+```
+
+###  SEO Tips
+
+* meaningful text use 
+* internal linking 
+
+---
+
+# 7. List Tags
+
+```html
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+```
+
+structured content = SEO friendly
+
+---
+
+# 🔹 8. Extra Useful Tags
+
+* `<figure>` + `<figcaption>` → image description
+* `<mark>` → highlight
+* `<time>` → date/time info
+* `<code>` → code content
+
+---
+
+# (Best Practice)
+
+
+<header>
+  <h1>Website Title</h1>
+</header>
+
+<nav>Menu</nav>
+
+<main>
+  <section>
+    <h2>Section Title</h2>
+    <p>Content...</p>
+  </section>
+
+  <article>
+    <h2>Blog Title</h2>
+    <p>Blog content...</p>
+  </article>
+</main>
+
+<footer>
+  <p>Copyright</p>
+</footer>
+
+
+---
+

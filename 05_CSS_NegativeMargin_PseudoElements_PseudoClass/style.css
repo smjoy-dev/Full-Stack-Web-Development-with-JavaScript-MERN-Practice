@@ -1,0 +1,130 @@
+*{
+    margin: 2px;
+    padding: 5px;
+}
+
+/* pririty: inline > id > class > element */
+/* Type 1 - Navigate margin */
+
+.box{
+    width: 70px;
+    height: 70px;
+}
+
+.box1{
+    background-color: rgb(0, 247, 255);
+    margin-left: 50px;
+}
+
+.box2{
+    background-color: rgb(25, 0, 255);
+    margin-top: -50px;
+}
+
+/* Pseudo-elements */
+
+.title::before{
+    content: "★ ";
+    font-size: 30px; 
+    color: red;
+/* ey block e color-font size other design shob ey star er jonne kaj korbe
+Feature text er jonne .title diye alada block e design korte hobe */
+}
+
+.title::after{
+    content: " ★";
+    font-size: 30px; 
+    color: red;
+}
+
+/* Type 3 - Pseudo-Class */
+h2{
+    color: red;
+    border-bottom: 0.5px solid rgb(20, 2, 2); 
+}
+
+.hover{
+    padding: 15px;
+    background-color: aqua;
+    margin: 10px 0;
+}
+
+.hover:hover{
+    background-color: rgb(0, 255, 0);
+    color: white;  
+}
+
+.focus{
+    padding: 15px;
+    background-color: aqua;
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+}
+/* Use for form */
+.focus:focus{
+    background-color: rgb(0, 255, 0);
+    color: white; 
+    border-color: rgb(255, 0, 0);
+    outline: none;
+/* outline border black line */
+}
+
+.not li{
+    padding: 5px;
+    background-color: rgb(0, 255, 255);
+    margin: 5px;
+}
+
+/* .not li:not(:first-child){
+    background-color: rgb(255, 0, 255);
+} */
+
+.not li:not(.none){
+    background-color: rgb(0, 255, 102);
+/* none green noy */
+}
+
+/* .not li:last-child{
+    background-color: rgb(255, 0, 255);
+} */
+
+.lasttype p {
+    padding: 5px;
+    background-color: rgb(0, 255, 255);
+    margin: 5px;
+}
+
+.lasttype span {
+    padding: 5px;
+    background-color: rgb(23, 165, 44);
+    margin: 5px;
+    display: block;
+}
+
+
+/*  :last-of-type */
+.lasttype p:last-of-type {
+    background-color: rgb(255, 0, 255);
+}
+
+.lasttype span:last-of-type {
+    background-color: rgb(255, 98, 0);
+}
+
+.nth-child li{
+    padding: 5px;
+    background-color: magenta;
+    margin: 5px;
+}
+
+/*  :nth-child(2) */
+.nth-child li:nth-child(2){
+    background-color: rgb(0, 255, 94);
+}
+
+.nth-child li:nth-child(odd){
+    color: rgb(235, 228, 228);
+    background-color: rgb(233, 36, 36);
+}
+
