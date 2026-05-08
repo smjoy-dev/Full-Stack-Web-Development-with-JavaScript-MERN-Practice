@@ -1,0 +1,108 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box; 
+    /* type 3 (unit) er jonne newa boxsizing
+     */
+}
+
+/* Type 1 - Transform Properties */
+.box{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    transition: all 0.5s ease; 
+/* transition use kore hoy smoothness er jonne
+all = sob property te transition apply hobe(transform, background-color, etc.)
+ease = transition er speed change korar jonne, onno option gulo holo linear, ease-in, ease-out, etc.
+*/
+}
+
+.t-translate:hover{
+    transform: translate(12px, -10px);
+}
+
+.t-scale{
+    transform: scale(1.5);
+}
+
+.t-rotate{
+    transform: rotate(90deg);
+}
+
+.t-skew{
+    transform: skew(20deg, 10deg);
+}
+
+.t-combo:hover{
+    transform: translate(20px, 10px) scale(1.2) rotate(45deg);
+}
+
+
+/* Type 2 - Transform Properties */
+/* these are only for text elements,
+ not for block elements like div, span, etc. */
+p{  
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 10px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+h2{
+    font-size: 24px;
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    margin: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+a{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 10px;
+    padding: 5px;
+    border: #333 solid 1px;
+    border-radius: 4px;
+    text-decoration: none; /* remove underline */
+    background-color: aquamarine;
+}
+
+.card{
+    width: 100px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    font-size: 13px;
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    padding: 2px;
+    overflow: auto; /* content overflow hide korar jonne */
+}
+
+
+/* Type 3 Units 
+16px = 1 em 
+these em,rem,vh,vw used for responsive
+em - immadite parent ke follow kore
+rem - root parent ke follow kore */ 
+.cbox{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: burlywood;
+    opacity: 0.8; /* opacity use kore element ke transparent kora jonne */
+}
+

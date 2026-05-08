@@ -1,0 +1,37 @@
+##  Problem (default)
+
+```css
+width: 200px;
+padding: 20px;
+```
+
+ actual size = 240px
+(কারণ padding বাইরে যোগ হয়)
+
+
+##  `box-sizing: border-box`
+
+```css
+box-sizing: border-box;
+```
+
+ এখন:
+ total size = 200px থাকবে
+ padding ভিতরের মধ্যে count হবে
+
+
+##  Easy line
+
+ border-box = যা width দিব, সেটাই final size
+
+| Unit  | Responsive? |
+| ----- | ----------- |
+| px    |  না          |
+| em/rem|  পুরো না     |   text
+| %     |  হ্যাঁ         |   shpae/image/box
+| vw/vh |  হ্যাঁ         |   shpae/image/box
+
+## Main difference
+
+ vh/vw = screen base
+ % = parent base
