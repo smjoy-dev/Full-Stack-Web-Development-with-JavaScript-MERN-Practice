@@ -1,0 +1,32 @@
+#  Tailwind CSS Grid — Short Note
+
+ `grid` = grid system on
+ `grid-cols-12` = 12 column create
+ `gap-4` = spacing
+
+---
+
+#  12 Column System
+
+ পুরো row = 12 column
+
+Example:
+
+12 = full width
+6 + 6 = 2 equal box
+4 + 4 + 4 = 3 equal box
+3 + 3 + 3 + 3 = 4 equal box
+
+---
+
+ `4 + 4 + 4 = 12`
+
+ 3 equal container
+
+---
+
+ mobile = 1 column
+ medium screen = 3 column
+
+---
+
