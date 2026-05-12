@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-neutral-950 text-neutral-200 font-sans">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-neutral-950/80 z-50 border-b border-neutral-700">
+        <!-- header a navbar sticky/fixed korar jonne fixed use kora hoise -->
+        <!-- fixed er sathe [top-0 left-0 w-full] eigula use korle content design adjust hoiye jabe-->
+        <!-- bg-neutral-950/80 diye nav bar ke alada color diye transparent kora hoiyese -->
+        <nav class="max-w-6xl mx-auto py-4 px-6 flex items-center justify-between">
+
+            <h1 class="text-xl font-semibold tracking-wide">My Portfolio</h1>
+
+            <ul class="hidden md:flex gap-8">
+                <li><a href="#home" class="text-neutral-200 hover:text-neutral-400 transition-opacity">Home</a></li>
+                <li><a href="#about" class="text-neutral-200 hover:text-neutral-400">About</a></li>
+                <li><a href="#projects" class="text-neutral-200 hover:text-neutral-400">Projects</a></li>
+                <li><a href="#contact" class="text-neutral-200 hover:text-neutral-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <!-- Home -->
+    <section id="home" class="min-h-screen flex items-center justify-center">
+        <!-- jekono screen er minimun height -->
+        <!-- item center kaj korbe na height na dile -->
+        <div class="max-w-3xl">
+            <h2
+                class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight bg-gradient-to-r from-indigo-500 to bg-cyan-500 bg-clip-text text-transparent">
+                Welcome to My Portfolio</h2>
+            <!-- leading-tight = line height কমানো, bg-gradient-to-r = mane holo right theke gradiant suru hobe-->
+            <!-- sudu text a apply korar jonne = bg-clip-text text-transparent use kora hoy, nahole block style e shoe krbe -->
+            <p class="text-lg md:text-xl text-neutral-400 mb-8">
+                Hello! I'm a passionate web developer with experience in creating responsive and visually appealing
+                websites.
+                I specialize in front-end development and have a strong background in HTML, CSS, and JavaScript. I enjoy
+                turning
+                complex problems into simple, beautiful, and intuitive designs.
+            </p>
+
+            <a href="#projects"
+                class="inline-block bg-gradient-to-r from-indigo-500 to-cyan-500 text-white px-6 py-3 rounded-xl shadow-lg hover:from-indigo-600 hover:to-cyan-600 hover:scale-105 transition-colors">View
+                My Work</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="min-h-screen flex items-center justify-center bg-neutral-900 px-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl w-full">
+            <!-- w-full = available পুরো width নিবে
+               max-w-6xl = কিন্তু একটা limit এর বেশি বড় হবে না -->
+
+            <!-- Left Content -->
+            <div>
+                <h2
+                    class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent">
+                    About Me
+                </h2>
+
+                <p class="text-lg md:text-xl text-neutral-400 mb-8">
+                    I'm a self-taught web developer with a passion for creating beautiful and functional websites. I
+                    have experience working with various technologies and frameworks,
+                    and I'm always eager to learn new skills and take on new challenges.
+                </p>
+
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-green-500 to-teal-500 text-white px-6 py-3 rounded-xl shadow-lg hover:from-green-600 hover:to-teal-600 hover:scale-105 transition">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Right Image -->
+            <div class="w-full h-72 rounded-2xl overflow-hidden shadow-lg">
+
+                <img src=".\images\Zenitsu.jpg" alt="zenitsu" class="w-full h-full object-cover">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section id="projects" class="min-h-screen flex items-center justify-center px-4">
+
+        <div class="max-w-6xl w-full">
+            <h2
+                class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent">
+                My Projects
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+                    <img src=".\images\Zenitsu.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project One</h3>
+                        <p class="text-neutral-400 mb-4">A responsive e-commerce website</p>
+                        <a href="#" class="text-indigo-500 hover:underline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+                    <img src=".\images\Zenitsu.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+                        <p class="text-neutral-400 mb-4">A personal blog platform </p>
+                        <a href="#" class="text-indigo-500 hover:underline">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-neutral-900 rounded-xl shadow-lg overflow-hidden">
+                    <img src=".\images\Zenitsu.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+                        <p class="text-neutral-400 mb-4">A task management app </p>
+                        <a href="#" class="text-indigo-500 hover:underline">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="min-h-screen bg-black px-4 py-20">
+
+        <div class="max-w-4xl mx-auto">
+
+            <!-- Heading -->
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-12">
+                Contact
+            </h2>
+
+            <!-- Form -->
+            <form class="space-y-6">
+
+                <!-- Name -->
+                <input type="text" placeholder="Your Name"
+                    class="w-full bg-neutral-900 border border-neutral-800 text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+
+                <!-- Email -->
+                <input type="email" placeholder="Your Email"
+                    class="w-full bg-neutral-900 text-white border border-neutral-800 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:bg-neutral-900" />
+
+                <!-- Message -->
+                <textarea rows="6" placeholder="Your Message"
+                    class="w-full bg-neutral-900 border border-neutral-800 text-white p-4 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+
+                <!-- Button -->
+                <button type="submit"
+                    class="bg-white text-black px-8 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-800 py-6 text-center bg-black">
+
+        <p class="text-neutral-500 text-sm">
+            2026 MyPortfolio. All rights reserved.
+        </p>
+
+    </footer>
+</body>
+
+</html
