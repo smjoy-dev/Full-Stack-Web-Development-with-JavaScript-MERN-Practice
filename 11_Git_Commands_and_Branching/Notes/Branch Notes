@@ -1,0 +1,79 @@
+**Git Branching in Industry / Production Level**
+
+Why Branch is Important:
+Branch helps developers work on new features, bug fixes, or testing without affecting the main project.
+
+Main Idea:
+main/master = stable production code
+branch = separate workspace for development
+
+main/master er update code file tai copy hoy new created branch e.
+new branch e new kaj kore, main/master branch er sathe marge kore dite hoy bug/fix kore
+marge korar jonne main/master branch e jeye -- then command git merge feature-name
+
+Industry Workflow:
+1. Create branch for new feature
+2. Work separately
+3. Test code
+4. Merge into main branch after verification
+
+
+
+**Example:**
+Banking Software
+
+main/master
+→ live banking system
+
+feature-payment
+→ new payment feature development
+
+bugfix-login
+→ fixing login issue
+
+This prevents breaking the live application.
+
+
+
+**Important Git Branch Commands**
+
+1. Check Current Branch:
+git branch
+
+2. Create New Branch:
+git branch feature-name
+
+3. Switch Branch:
+git checkout feature-name
+
+4. Create + Switch Together:
+git checkout -b feature-name
+
+5. Merge Branch:
+git merge feature-name
+
+6. Delete Branch:
+git branch -d feature-name
+
+7. Show All Branches:
+git branch -a
+
+8. Push Branch to GitHub:
+git push origin feature-name
+
+9. Pull Latest Changes:
+git pull origin main
+
+10. Switch Back to Main:
+git checkout main
+
+Why Companies Use Branching:
+- Multiple developers can work together
+- Keeps production safe
+- Easy testing
+- Easy rollback
+- Organized teamwork
+- Feature-based development
+
+
+---

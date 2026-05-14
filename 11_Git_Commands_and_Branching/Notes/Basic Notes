@@ -1,0 +1,118 @@
+Git= version Control in Team Porject Management
+
+---
+
+**Git First Time Setup Process**
+
+1. Install Git:
+Download and install Git from:
+https://git-scm.com/
+
+2. Check Git Version:
+git --version
+
+3. Set Username:
+git config --global user.name "Your Name"
+
+4. Set Email:
+git config --global user.email "youremail@example.com"
+
+5. Check Configuration:
+git config --list
+
+---
+
+
+**Basic Git Workflow**
+
+1. Create a File:
+Example:
+index.html
+
+2. Check Status:
+git status
+
+3. Stage File:
+git add .
+
+4. Commit Changes:
+git commit -m "Initial commit"
+
+5. View Commit History:
+git log or git log --oneline
+
+6. Show Changes:
+git diff
+
+7. Reset Last Commit:
+git reset --soft HEAD~1
+
+8. Create Branch:
+git branch feature
+
+9. Switch Branch:
+git checkout feature
+
+10. Merge Branch:
+git merge feature
+
+---
+feature = new branch name
+
+git checkout feature
+
+Meaning:
+"feature" branch এ switch করো
+
+---
+
+Connect Existing Local Project to an Existing GitHub Repository
+
+1. Open project folder in VS Code
+
+2. Open terminal
+
+3. Initialize Git:
+git init
+
+4. Add GitHub repository link:
+git remote add origin https://github.com/your-username/your-repository-name.git
+
+5. Check remote link:
+git remote -v
+
+6. Stage files:
+git add .
+
+7. Commit files:
+git commit -m "Initial commit"
+
+8. Push to GitHub:
+git branch -M main
+git push -u origin main
+
+9. Remove file from staging area:
+git restore --staged filename
+
+10. Remove all staged files:
+git restore --staged .
+
+
+---
+
+
+**How to Uncommit**
+
+1. Remove last commit but keep changes:
+git reset --soft HEAD~1
+
+2. Remove last commit and unstage changes:
+git reset HEAD~1
+
+3. Remove last commit and delete changes:
+git reset --hard HEAD~1
+
+4. Discard chnages/remove new changes code lines from file that not commited yet:
+git restore file-name
+
+---
