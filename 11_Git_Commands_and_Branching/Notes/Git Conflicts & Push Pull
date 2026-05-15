@@ -1,0 +1,90 @@
+**Git Advanced Commands Notes**
+
+1. Push Changes to GitHub
+Upload local commits to GitHub
+
+Command:
+git push origin main
+
+
+2. Fetch and Merge Changes from Remote
+Download latest changes and merge automatically
+
+Command:
+git pull origin main
+
+
+3. Create a Pull Request (PR)
+Request to merge your branch into main branch
+
+Process:
+- Push branch to GitHub
+- Open GitHub
+- Click "Compare & Pull Request"
+- Create Pull Request
+
+
+4. Create a New Branch
+Create separate workspace
+
+Command:
+git checkout -b feature-name
+
+
+5. Delete Remote Branch
+Remove branch from GitHub
+
+Command:
+git push origin --delete branch-name
+
+
+6. PR (Pull Request)
+Used for:
+- Code review
+- Team collaboration
+- Safe merging
+- Production workflow
+
+
+7. Fetch Changes Without Merging
+Download updates only
+
+Command:
+git fetch
+
+Difference:
+fetch = See changes only
+pull = download + merge
+
+
+8. Clone with the Latest Commits Only
+Download lightweight repository
+
+Command:
+git clone --depth 1 repository-link
+
+
+9. View File Modification History
+See commit history of specific file
+
+Command:
+git log filename
+
+Example:
+git log index.html
+or
+git log --online
+
+
+10. Resolve Merge Conflicts
+When two branches modify same code
+
+Steps:
+- Edit conflicted code manually
+- Save file
+- Stage changes
+
+Commands:
+git add .
+git commit -m "Resolved merge conflict"
+```
