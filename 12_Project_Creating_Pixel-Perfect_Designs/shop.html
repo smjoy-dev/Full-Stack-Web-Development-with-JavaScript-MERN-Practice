@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Shop — Neth Bookpoint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <style>body{font-family:'Poppins',sans-serif}</style>
+</head>
+
+<body class="bg-[#f7f3ee] text-[#111827]">
+    <header class="bg-[url('assets/images/nav.png')] bg-cover bg-center bg-no-repeat">
+        <div class="max-w-7xl mx-auto py-3 ">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <h1 class="bona-nova-bold font-bold text-2xl leading-tight tracking-wide text-[#CC9600]">
+                        <span>NETH</span> <br>
+                        <span>BOOKPOINT</span>
+                    </h1>
+                </div>
+                <div>
+                    <nav class="flex gap-10 flex-1 justify-self-end items-center">
+                        <ul class="flex gap-6 flex-grow">
+                            <li><a href="index.html" class="text-[#CC9600] font-bold text-lg">Home</a></li>
+                            <li><a href="about.html" class="text-[#CC9600] font-bold text-lg">About</a></li>
+                            <li><a href="shop.html" class="text-[#CC9600] font-bold text-lg">Shop</a></li>
+                            <li><a href="cart.html" class="text-[#CC9600] font-bold text-lg">Cart</a></li>
+                        </ul>
+                        <li class="list-none">
+                            <a href="">
+                                <div class="flex flex-col gap-1 items-center">
+                                    <img src="assets/images/user.png" alt="user" class="w-8">
+                                    <span class="text-white">john@gmail.com</span>
+                                </div>
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-white py-10">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-semibold text-[#c89238]">Explore All Books Here</h1>
+            <div class="mt-4 flex justify-center gap-6 items-center">
+                <label class="inline-flex items-center gap-2"><input type="checkbox" checked class="accent-[#c89238]"><span class="text-sm">All</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" class="accent-[#c89238]"><span class="text-sm">Novel</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" class="accent-[#c89238]"><span class="text-sm">Translations</span></label>
+                <label class="inline-flex items-center gap-2"><input type="checkbox" class="accent-[#c89238]"><span class="text-sm">Kids' Stories</span></label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products grid -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+            <article class="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
+                <img src="assets/images/book.png" alt="Book" class="w-full h-48 object-cover rounded-md">
+                <h3 class="mt-3 font-semibold text-sm">Thummanahadiya</h3>
+                <p class="text-xs text-gray-600">Mahagamachchi</p>
+                <div class="mt-3 text-sm text-gray-800 font-medium">Rs. 350</div>
+                <p class="mt-2 text-xs text-gray-500">Available across all Branches</p>
+                <button class="mt-4 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded border border-[#c89238] text-sm bg-white hover:bg-[#f3efe7]">Add to Cart</button>
+            </article>
+
+            <article class="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
+                <img src="assets/images/book.png" alt="Book" class="w-full h-48 object-cover rounded-md">
+                <h3 class="mt-3 font-semibold text-sm">Manikawatha</h3>
+                <p class="text-xs text-gray-600">Mabola Priyantha</p>
+                <div class="mt-3 text-sm text-gray-800 font-medium">Rs. 420</div>
+                <p class="mt-2 text-xs text-gray-500">Available across all Branches</p>
+                <button class="mt-4 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded border border-[#c89238] text-sm bg-white hover:bg-[#f3efe7]">Add to Cart</button>
+            </article>
+
+            <article class="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
+                <img src="assets/images/book.png" alt="Book" class="w-full h-48 object-cover rounded-md">
+                <h3 class="mt-3 font-semibold text-sm">Mangalaiya</h3>
+                <p class="text-xs text-gray-600">Manjula Wedilawana</p>
+                <div class="mt-3 text-sm text-gray-800 font-medium">Rs. 299</div>
+                <p class="mt-2 text-xs text-gray-500">Available across all Branches</p>
+                <button class="mt-4 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded border border-[#c89238] text-sm bg-white hover:bg-[#f3efe7]">Add to Cart</button>
+            </article>
+
+            <article class="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
+                <img src="assets/images/book.png" alt="Book" class="w-full h-48 object-cover rounded-md">
+                <h3 class="mt-3 font-semibold text-sm">The Book Thief</h3>
+                <p class="text-xs text-gray-600">Markus Zusak</p>
+                <div class="mt-3 text-sm text-gray-800 font-medium">Rs. 560</div>
+                <p class="mt-2 text-xs text-gray-500">Available in Colombo Branch Only</p>
+                <button class="mt-4 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded border border-[#c89238] text-sm bg-white hover:bg-[#f3efe7]">Add to Cart</button>
+            </article>
+
+            <article class="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
+                <img src="assets/images/book.png" alt="Book" class="w-full h-48 object-cover rounded-md">
+                <h3 class="mt-3 font-semibold text-sm">Thummanahadiya</h3>
+                <p class="text-xs text-gray-600">Mahagamachchi</p>
+                <div class="mt-3 text-sm text-gray-800 font-medium">Rs. 350</div>
+                <p class="mt-2 text-xs text-gray-500">Available across all Branches</p>
+                <button class="mt-4 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded border border-[#c89238] text-sm bg-white hover:bg-[#f3efe7]">Add to Cart</button>
+            </article>
+
+            <article class="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
+                <img src="assets/images/book.png" alt="Book" class="w-full h-48 object-cover rounded-md">
+                <h3 class="mt-3 font-semibold text-sm">Thummanahadiya</h3>
+                <p class="text-xs text-gray-600">Mahagamachchi</p>
+                <div class="mt-3 text-sm text-gray-800 font-medium">Rs. 350</div>
+                <p class="mt-2 text-xs text-gray-500">Available across all Branches</p>
+                <button class="mt-4 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded border border-[#c89238] text-sm bg-white hover:bg-[#f3efe7]">Add to Cart</button>
+            </article>
+
+            <article class="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
+                <img src="assets/images/book.png" alt="Book" class="w-full h-48 object-cover rounded-md">
+                <h3 class="mt-3 font-semibold text-sm">Thummanahadiya</h3>
+                <p class="text-xs text-gray-600">Mahagamachchi</p>
+                <div class="mt-3 text-sm text-gray-800 font-medium">Rs. 350</div>
+                <p class="mt-2 text-xs text-gray-500">Available across all Branches</p>
+                <button class="mt-4 w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded border border-[#c89238] text-sm bg-white hover:bg-[#f3efe7]">Add to Cart</button>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="bg-[#050505] text-[#f2e4c2] py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">© 2026 Neth Bookpoint</div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    
+
+    <a href="cart.html" id="cartBtn" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-[#c89238] text-white shadow-lg flex items-center justify-center z-40" aria-label="Cart">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 17a2 2 0 11-4 0 2 2 0 014 0zM7 17a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+        <span class="absolute -top-1 -right-1 bg-white text-[#c89238] text-xs w-5 h-5 rounded-full flex items-center justify-center font-semibold">0</span>
+    </a>
+</body>
+
+</html>

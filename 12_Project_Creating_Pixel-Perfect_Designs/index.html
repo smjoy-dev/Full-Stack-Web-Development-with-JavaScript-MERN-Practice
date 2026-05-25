@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — Neth Bookpoint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- this cdn tailwind css is only for dev, not for production -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Playwrite+AR+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+<body class="text-white bona-nova-regular">
+    <header class="bg-[url('assets/images/nav.png')] bg-cover bg-center bg-no-repeat">
+        <div class="max-w-7xl mx-auto py-3 ">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <h1 class="bona-nova-bold font-bold text-2xl leading-tight tracking-wide text-[#CC9600]">
+                        <span>NETH</span> <br>
+                        <span>BOOKPOINT</span>
+                    </h1>
+                </div>
+                <div>
+                    <nav class="flex gap-10 flex-1 justify-self-end items-center">
+                        <ul class="flex gap-6 flex-grow">
+                            <li><a href="index.html" class="text-[#CC9600] font-bold text-lg">Home</a></li>
+                            <li><a href="about.html" class="text-[#CC9600] font-bold text-lg">About</a></li>
+                            <li><a href="shop.html" class="text-[#CC9600] font-bold text-lg">Shop</a></li>
+                            <li><a href="cart.html" class="text-[#CC9600] font-bold text-lg">Cart</a></li>
+                        </ul>
+                        <li class="list-none">
+                            <a href="">
+                                <div class="flex flex-col gap-1 items-center">
+                                    <img src="assets/images/user.png" alt="user" class="w-8">
+                                    <span>john@gmail.com</span>
+                                </div>
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bg-[url('assets/images/hero.png')] bg-cover bg-center bg-no-repeat py-20">
+        <div class="max-w-7xl mx-auto px-4 py-3 min-h-[480px]">
+            <!-- pic er je height setai use kora hoise, pic kete jacchilo adjust korar jonne -->
+            <div class="flex flex-col gap-10 items-center">
+                <!-- ekta web e h1 ekbar e use krbo -->
+                <h2 class="text-4xl font-bold text-center tracking-wide text-[#CC9600]">The Book Lovers Dreamland
+                    Awaits!
+                </h2>
+
+                <p class="text-lg text-center text-white/80">Your one-stop destination for all your book needs. Explore
+                    our vast
+                    collection and find your next great read today!
+                </p>
+
+                <div class="flex items-center border border-yellow-700 rounded-md overflow-hidden w-fit">
+                    <input type="text" placeholder="Search a Book" class="bg-transparent text-white 
+                      placeholder:text-gray-400 px-4 py-2 outline-none w-64">
+
+                    <button class="bg-[#6B3F11] text-white px-7 py-2 h-full m-2
+                      rounded-md hover:bg-[#CC9600] transition-colors duration-300">
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#f3efe7] py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-center text-4xl md:text-5xl font-bold text-[#171717] mb-10">Our Best Picks</h2>
+
+            <div class="owl-carousel best-picks-carousel">
+                <article class="flex flex-col items-center text-center px-3">
+                    <img src="assets/images/book.png" alt="Book cover" class="w-[150px] h-[210px] object-cover shadow-lg border border-black/10">
+                    <h3 class="mt-4 text-[13px] font-semibold text-[#1d1d1d] leading-tight">Thummathiya</h3>
+                    <p class="text-[11px] text-[#666666] mt-1">Mahagama Sekara</p>
+                </article>
+
+                <article class="flex flex-col items-center text-center px-3">
+                    <img src="assets/images/book.png" alt="Book cover" class="w-[150px] h-[210px] object-cover shadow-lg border border-black/10">
+                    <h3 class="mt-4 text-[13px] font-semibold text-[#1d1d1d] leading-tight">Cerepaliya</h3>
+                    <p class="text-[11px] text-[#666666] mt-1">Martin Wickramasinghe</p>
+                </article>
+
+                <article class="flex flex-col items-center text-center px-3">
+                    <img src="assets/images/book.png" alt="Book cover" class="w-[150px] h-[210px] object-cover shadow-lg border border-black/10">
+                    <h3 class="mt-4 text-[13px] font-semibold text-[#1d1d1d] leading-tight">Kakulara Saha Seva</h3>
+                    <p class="text-[11px] text-[#666666] mt-1">Kumarathunga Munidasa</p>
+                </article>
+
+                <article class="flex flex-col items-center text-center px-3">
+                    <img src="assets/images/book.png" alt="Book cover" class="w-[150px] h-[210px] object-cover shadow-lg border border-black/10">
+                    <h3 class="mt-4 text-[13px] font-semibold text-[#1d1d1d] leading-tight">Adarshaya Victoria</h3>
+                    <p class="text-[11px] text-[#666666] mt-1">Mohan Raj Madawala</p>
+                </article>
+
+                <article class="flex flex-col items-center text-center px-3">
+                    <img src="assets/images/book.png" alt="Book cover" class="w-[150px] h-[210px] object-cover shadow-lg border border-black/10">
+                    <h3 class="mt-4 text-[13px] font-semibold text-[#1d1d1d] leading-tight">Sathpurushaya</h3>
+                    <p class="text-[11px] text-[#666666] mt-1">Kumarathunga Munidasa</p>
+                </article>
+
+                <article class="flex flex-col items-center text-center px-3">
+                    <img src="assets/images/book.png" alt="Book cover" class="w-[150px] h-[210px] object-cover shadow-lg border border-black/10">
+                    <h3 class="mt-4 text-[13px] font-semibold text-[#1d1d1d] leading-tight">Nidahase Potha</h3>
+                    <p class="text-[11px] text-[#666666] mt-1">A. P. Gunaratne</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#050505] py-16 md:py-20 text-[#f2e4c2]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid items-center gap-10 lg:grid-cols-2">
+                <div class="relative">
+                    <p class="absolute left-0 top-0 text-[11px] md:text-sm uppercase tracking-[0.38em] text-[#b98a42]">
+                        Find magic within the pages
+                    </p>
+
+                    <div class="pt-8 md:pt-10">
+                        <div class="rounded-[28px] border border-[#8b6530]/30 bg-white/5 p-4 md:p-5 shadow-[0_18px_50px_rgba(0,0,0,0.45)]">
+                            <div class="flex items-end gap-4 rounded-2xl bg-[#0f0a05] p-4 md:p-5">
+                                <div class="flex items-end gap-1 self-stretch">
+                                    <span class="h-16 w-4 rounded-t-sm bg-[#8d5622]"></span>
+                                    <span class="h-24 w-4 rounded-t-sm bg-[#4f6d7a]"></span>
+                                    <span class="h-20 w-4 rounded-t-sm bg-[#c48a43]"></span>
+                                    <span class="h-28 w-4 rounded-t-sm bg-[#6d2d21]"></span>
+                                    <span class="h-18 w-4 rounded-t-sm bg-[#c8a76e]"></span>
+                                    <span class="h-26 w-4 rounded-t-sm bg-[#8d5d3a]"></span>
+                                    <span class="h-22 w-4 rounded-t-sm bg-[#d3b26e]"></span>
+                                    <span class="h-30 w-4 rounded-t-sm bg-[#553f2c]"></span>
+                                </div>
+
+                                <div class="flex-1 rounded-xl border border-[#f3d9a1]/10 bg-gradient-to-br from-[#1a1108] to-[#080808] p-3">
+                                    <img src="assets/images/book.png" alt="Featured book shelf" class="h-56 md:h-64 w-full rounded-lg object-cover shadow-[0_18px_35px_rgba(0,0,0,0.35)]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:pl-4">
+                    <h2 class="max-w-xl text-4xl md:text-5xl font-semibold leading-[0.95] text-[#f2e4c2]">
+                        Your favourite <span class="text-[#c89238]">Reads</span> Are Here!
+                    </h2>
+
+                    <p class="mt-5 max-w-xl text-sm md:text-base leading-7 text-white/70">
+                        Buy your favourite books online with easy browsing and a calm, premium look. Explore fiction,
+                        classics, and educational titles in a layout that feels warm and editorial.
+                    </p>
+
+                    <div class="mt-8 grid max-w-lg grid-cols-3 gap-3 md:gap-5">
+                        <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 md:px-4 md:py-5 text-center">
+                            <div class="text-2xl font-semibold text-[#d8a44d]">800+</div>
+                            <div class="mt-2 text-[10px] md:text-xs uppercase tracking-[0.28em] text-white/45">Book Titles</div>
+                        </div>
+                        <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 md:px-4 md:py-5 text-center">
+                            <div class="text-2xl font-semibold text-[#d8a44d]">1K+</div>
+                            <div class="mt-2 text-[10px] md:text-xs uppercase tracking-[0.28em] text-white/45">Regular Readers</div>
+                        </div>
+                        <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-4 md:px-4 md:py-5 text-center">
+                            <div class="text-2xl font-semibold text-[#d8a44d]">50+</div>
+                            <div class="mt-2 text-[10px] md:text-xs uppercase tracking-[0.28em] text-white/45">Book Clubs</div>
+                        </div>
+                    </div>
+
+                    <button class="mt-8 rounded-full border border-[#c08a33] px-7 py-3 text-sm font-medium text-[#f0d9a8] transition hover:bg-[#c08a33] hover:text-[#1a1207]">
+                        Explore More
+                    </button>
+
+                    <div class="mt-14 border-t border-white/10 pt-5 text-[10px] md:text-xs text-white/40 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                        <p>© 2026 Neth Bookpoint. Crafted for readers who like clean, quiet presentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owl carousel website er document theke import kora -->
+    <!-- https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
