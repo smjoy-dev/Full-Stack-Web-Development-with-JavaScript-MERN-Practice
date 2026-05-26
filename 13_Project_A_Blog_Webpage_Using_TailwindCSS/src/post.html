@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-backgroundColor antialiased min-h-screen flex flex-col font-sans">
+    <!-- antialiased → Text and UI smoother/sharper dekhay. -->
+    <!-- min-h-screen → Page content kom holeo full screen cover kore.-->
+    <nav class="bg-cardColor border-b border-gray-200 sticky top-0 z-20 shadow-sm px-10">
+        <div class="max-w-screen-2xl mx-auto p-4 flex justify-between items-center">
+            <a href="home.html" class="text-2xl font-bold text-primaryColor tracking-tight">My Blog.</a>
+            <div class="space-x-8 text-sm font-medium ">
+                <a href="home.html" class="text-textColorLight hover:text-primaryColor transition-colors">Back</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <main class="grow max-w-screen-2xl mx-auto w-full p-4 md:p-8 mt-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+            <article class="lg:col-span-8 max-w-4xl">
+
+                <img class="w-full h-auto rounded-2xl shadow-md mb-12 object-cover max-h-96" alt="The Art of Minimalism"
+                    src="./images/Zenitsu.jpg">
+
+                <div class="text-lg text-textColor leading-8">
+                    <p class="text-xl text-textColorLight mb-8 leading-8">
+                        Minimalism in web design is more than just a passing trend.
+                        It's a fundamental approach to creating interfaces that are
+                        both aesthetically pleasing and highly functional.
+                    </p>
+                    <h2 class="text-3xl font-bold mt-8 mb-4">
+                        Less Is More
+                    </h2>
+                    <p class="mb-6">
+                        When we say "less is more," we are referring to the idea that
+                        limiting design elements can actually improve the user's focus
+                        and understanding.
+                    </p>
+                    <p class="mb-6">
+                        Consider the most successful digital products today.
+                        They predominantly use generous white space and clear typography.
+                    </p>
+
+                    <blockquote class="border-l-4 border-primaryColor pl-4 my-8 italic text-textColorLight">
+                        "Perfection is achieved, not when there is nothing more to add,
+                        but when there is nothing left to take away."
+                    </blockquote>
+                    
+                    <h2 class="text-3xl font-bold mt-8 mb-4">
+                        The Implementation Plan
+                    </h2>
+                    <p class="mb-6">
+                        Implementing a minimal design often proves to be surprisingly difficult.
+                        It requires discipline and consistency.
+                    </p>
+                    <p class="mb-6">
+                        The objective is not to remove personality,
+                        but to remove noise.
+                    </p>
+                </div>
+            </article>
+
+            <aside class="lg:col-span-4 lg:max-w-sm w-full">
+
+                <div class="lg:sticky lg:top-28 space-y-4">
+
+                    <section class="bg-cardColor border border-gray-200 rounded-2xl p-4 shadow-sm">
+                        <h3 class="text-xs uppercase tracking-wider font-semibold text-textColorLight">
+                            On This Page
+                        </h3>
+                        <ul class="space-y-2 text-xs mt-3">
+                            <li>
+                                <a href="#introduction" class="hover:text-primaryColor transition-colors">
+                                    Introduction
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#main-content" class="hover:text-primaryColor transition-colors">
+                                    Main Content
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#conclusion" class="hover:text-primaryColor transition-colors">
+                                    Conclusion
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+
+                    <section class="bg-cardColor border border-gray-200 rounded-2xl p-4 shadow-sm">
+                        <h3 class="text-xs uppercase tracking-wider font-semibold text-textColorLight mb-3">
+                            Related Post
+                        </h3>
+                        <div class="space-y-3">
+                            <a href="#" class="block group">
+                                <p class="font-semibold text-sm group-hover:text-primaryColor transition-colors">
+                                    Designing Better Reading Experiences
+                                </p>
+                                <p class="text-xs text-textColorLight mt-0.5">
+                                    6 min read
+                                </p>
+                            </a>
+                            <a href="#" class="block group">
+                                <p class="font-semibold group-hover:text-primaryColor transition-colors">
+                                    Modern UI Design Principles
+                                </p>
+                                <p class="text-xs text-textColorLight mt-1">
+                                    5 min read
+                                </p>
+                            </a>
+                            <a href="#" class="block group">
+                                <p class="font-semibold group-hover:text-primaryColor transition-colors">
+                                    Typography for Better UX
+                                </p>
+                                <p class="text-xs text-textColorLight mt-1">
+                                    4 min read
+                                </p>
+                            </a>
+                        </div>
+                    </section>
+
+
+                    <section class="bg-cardColor border border-gray-200 rounded-2xl p-4 shadow-sm">
+                        <h3 class="text-xs uppercase tracking-wider font-semibold text-textColorLight mb-3">
+                            Tags
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 rounded-full bg-indigo-50 text-primaryColor">
+                                Design
+                            </span>
+                            <span class="text-xs px-3 py-1 rounded-full bg-sky-50 text-sky-700">
+                                UX
+                            </span>
+                            <span class="text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">
+                                Typography
+                            </span>
+                            <span class="text-xs px-3 py-1 rounded-full bg-rose-50 text-rose-700">
+                                Layout
+                            </span>
+                        </div>
+                    </section>
+
+
+                    <section class="bg-cardColor border border-gray-200 rounded-2xl p-6 shadow-sm">
+                        <h3 class="text-sm uppercase tracking-wider font-semibold text-textColorLight">
+                            About The Author
+                        </h3>
+                        <div class="flex items-center space-x-4 mt-4">
+                            <img src="./images/Zenitsu.jpg" alt="Author Image"
+                                class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <p class="text-sm font-semibold">
+                                    John Doe
+                                </p>
+                                <p class="text-xs text-textColorLight">
+                                    Web Developer & Blogger
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </aside>
+
+        </div>
+    </main>
+    <footer class="bg-cardColor border-t border-gray-200 mt-20">
+        <div class="max-w-screen-2xl mx-auto p-6 md:p-8 text-center text-sm text-textColorLight">
+            <span class="font-bold text-primaryColor block mb-2 cursor-pointer">My Blog.</span>
+            <!-- block diye logo ta ke full block jaiga dew holo jate logo upor e thake , copyright text niche thake -->
+            <span>&copy; 2024 My Blog. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-backgroundColor antialiased min-h-screen flex flex-col font-sans">
+    <!-- antialiased → Text and UI smoother/sharper dekhay. -->
+    <!-- min-h-screen → Page content kom holeo full screen cover kore.-->
+    <nav class="bg-cardColor border-b border-gray-200 sticky top-0 z-20 shadow-sm px-10">
+        <div class="max-w-screen-2xl mx-auto p-4 flex justify-between items-center">
+            <a href="home.html" class="text-2xl font-bold text-primaryColor tracking-tight">My Blog.</a>
+            <div class="space-x-8 text-sm font-medium ">
+                <a href="home.html" class="text-textColorLight hover:text-primaryColor transition-colors">Home</a>
+                <a href="home.html" class="text-textColorLight hover:text-primaryColor transition-colors">Articles</a>
+            </div>
+        </div>
+
+    </nav>
+    <main class="grow max-w-screen-2xl mx-auto w-full p-4 md:p-8 mt-8">
+        <!-- ekhan e grow = flex-grow -->
+        <!-- grow → Flex container এর ভিতরে extra খালি জায়গা থাকলে element সেই জায়গা নিয়ে বড় হয়. -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4"> Thoughts & Ideas.</h1>
+            <p class="text-lg text-textColorLight">Welcome to my blog! Here, I share my thoughts, ideas, and insights on
+                various topics. Stay tuned for regular updates and feel free to explore!</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+            <article class="bg-cardColor rounded-2xl shadow-sm border border-gray-100 
+            overflow-hidden hover:shadow-sm transition-shadow group flex flex-col">
+            <img src="./images/Zenitsu.jpg" alt="Article Image" class="w-full h-52 object-cover">
+            <div class="p-6 flex flex-col grow">
+                <span class="text-xs uppercase text-primaryColor font-semibold tracking-wider mb-2">Design</span>
+                
+                <h2 class="text-2xl font-bold mb-2 group-hover:text-primaryColor transition-colors">
+                     <a href="post.html">The Art of Minimalism</a>
+                </h2>
+                <!-- group-hover: → Parent element hover করলে child element এ style apply করতে ব্যবহার হয়. -->
+                 <!-- Card hover করলে button/show text change করা. -->
+                <p class="text-textColorLight mb-4 line-clamp-3">
+                    <!-- line-clamp → নির্দিষ্ট সংখ্যক লাইনের পর text কাটে (... দেখায়). -->
+                    <!-- Long description short preview দেখানোর জন্য. -->
+                    Minimalism is a design philosophy that emphasizes simplicity and functionality. It focuses on
+                    removing unnecessary elements and creating clean, uncluttered spaces. In this article, we will
+                    explore the principles of minimalism and how it can enhance our lives and surroundings.
+                </p>
+                <div class="text-sm text-textColorLight mt-auto">
+                    Alex Johnson - <time datetime="2024-06-01">June 1, 2024</time>
+                </div>
+            </article>
+
+            <article class="bg-cardColor rounded-2xl shadow-sm border border-gray-100 
+            overflow-hidden hover:shadow-sm transition-shadow group flex flex-col">
+            <img src="./images/Zenitsu.jpg" alt="Article Image" class="w-full h-52 object-cover">
+            <div class="p-6 flex flex-col grow">
+                <span class="text-xs uppercase text-primaryColor font-semibold tracking-wider mb-2">Design</span>
+                
+                <h2 class="text-2xl font-bold mb-2 group-hover:text-primaryColor transition-colors">
+                    <a href="post.html">The Art of Minimalism</a>
+                </h2>
+                <!-- group-hover: → Parent element hover করলে child element এ style apply করতে ব্যবহার হয়. -->
+                 <!-- Card hover করলে button/show text change করা. -->
+                <p class="text-textColorLight mb-4 line-clamp-3">
+                    <!-- line-clamp → নির্দিষ্ট সংখ্যক লাইনের পর text কাটে (... দেখায়). -->
+                    <!-- Long description short preview দেখানোর জন্য. -->
+                    Minimalism is a design philosophy that emphasizes simplicity and functionality. It focuses on
+                    removing unnecessary elements and creating clean, uncluttered spaces. In this article, we will
+                    explore the principles of minimalism and how it can enhance our lives and surroundings.
+                </p>
+                <div class="text-sm text-textColorLight mt-auto">
+                    Alex Johnson - <time datetime="2024-06-01">June 1, 2024</time>
+                </div>
+            </article>
+
+            <article class="bg-cardColor rounded-2xl shadow-sm border border-gray-100 
+            overflow-hidden hover:shadow-sm transition-shadow group flex flex-col">
+            <img src="./images/Zenitsu.jpg" alt="Article Image" class="w-full h-52 object-cover">
+            <div class="p-6 flex flex-col grow">
+                <span class="text-xs uppercase text-primaryColor font-semibold tracking-wider mb-2">Design</span>
+                
+                <h2 class="text-2xl font-bold mb-2 group-hover:text-primaryColor transition-colors">
+                    <a href="post.html">The Art of Minimalism</a>
+                </h2>
+                <!-- group-hover: → Parent element hover করলে child element এ style apply করতে ব্যবহার হয়. -->
+                 <!-- Card hover করলে button/show text change করা. -->
+                <p class="text-textColorLight mb-4 line-clamp-3">
+                    <!-- line-clamp → নির্দিষ্ট সংখ্যক লাইনের পর text কাটে (... দেখায়). -->
+                    <!-- Long description short preview দেখানোর জন্য. -->
+                    Minimalism is a design philosophy that emphasizes simplicity and functionality. It focuses on
+                    removing unnecessary elements and creating clean, uncluttered spaces. In this article, we will
+                    explore the principles of minimalism and how it can enhance our lives and surroundings.
+                </p>
+                <div class="text-sm text-textColorLight mt-auto">
+                    Alex Johnson - <time datetime="2024-06-01">June 1, 2024</time>
+                </div>
+            </article>
+
+            <article class="bg-cardColor rounded-2xl shadow-sm border border-gray-100 
+            overflow-hidden hover:shadow-sm transition-shadow group flex flex-col">
+            <img src="./images/Zenitsu.jpg" alt="Article Image" class="w-full h-52 object-cover">
+            <div class="p-6 flex flex-col grow">
+                <span class="text-xs uppercase text-primaryColor font-semibold tracking-wider mb-2">Design</span>
+                
+                <h2 class="text-2xl font-bold mb-2 group-hover:text-primaryColor transition-colors">
+                    <a href="post.html">The Art of Minimalism</a>
+                </h2>
+                <!-- group-hover: → Parent element hover করলে child element এ style apply করতে ব্যবহার হয়. -->
+                 <!-- Card hover করলে button/show text change করা. -->
+                <p class="text-textColorLight mb-4 line-clamp-3">
+                    <!-- line-clamp → নির্দিষ্ট সংখ্যক লাইনের পর text কাটে (... দেখায়). -->
+                    <!-- Long description short preview দেখানোর জন্য. -->
+                    Minimalism is a design philosophy that emphasizes simplicity and functionality. It focuses on
+                    removing unnecessary elements and creating clean, uncluttered spaces. In this article, we will
+                    explore the principles of minimalism and how it can enhance our lives and surroundings.
+                </p>
+                <div class="text-sm text-textColorLight mt-auto">
+                    Alex Johnson - <time datetime="2024-06-01">June 1, 2024</time>
+                </div>
+            </article>
+
+            <article class="bg-cardColor rounded-2xl shadow-sm border border-gray-100 
+            overflow-hidden hover:shadow-sm transition-shadow group flex flex-col">
+            <img src="./images/Zenitsu.jpg" alt="Article Image" class="w-full h-52 object-cover">
+            <div class="p-6 flex flex-col grow">
+                <span class="text-xs uppercase text-primaryColor font-semibold tracking-wider mb-2">Design</span>
+                
+                <h2 class="text-2xl font-bold mb-2 group-hover:text-primaryColor transition-colors">
+                    <a href="post.html">The Art of Minimalism</a>
+                </h2>
+                <!-- group-hover: → Parent element hover করলে child element এ style apply করতে ব্যবহার হয়. -->
+                 <!-- Card hover করলে button/show text change করা. -->
+                <p class="text-textColorLight mb-4 line-clamp-3">
+                    <!-- line-clamp → নির্দিষ্ট সংখ্যক লাইনের পর text কাটে (... দেখায়). -->
+                    <!-- Long description short preview দেখানোর জন্য. -->
+                    Minimalism is a design philosophy that emphasizes simplicity and functionality. It focuses on
+                    removing unnecessary elements and creating clean, uncluttered spaces. In this article, we will
+                    explore the principles of minimalism and how it can enhance our lives and surroundings.
+                </p>
+                <div class="text-sm text-textColorLight mt-auto">
+                    Alex Johnson - <time datetime="2024-06-01">June 1, 2024</time>
+                </div>
+            </article>
+
+            <article class="bg-cardColor rounded-2xl shadow-sm border border-gray-100 
+            overflow-hidden hover:shadow-sm transition-shadow group flex flex-col">
+            <img src="./images/Zenitsu.jpg" alt="Article Image" class="w-full h-52 object-cover">
+            <div class="p-6 flex flex-col grow">
+                <span class="text-xs uppercase text-primaryColor font-semibold tracking-wider mb-2">Design</span>
+                
+                <h2 class="text-2xl font-bold mb-2 group-hover:text-primaryColor transition-colors">
+                    <a href="post.html">The Art of Minimalism</a>
+                </h2>
+                <!-- group-hover: → Parent element hover করলে child element এ style apply করতে ব্যবহার হয়. -->
+                 <!-- Card hover করলে button/show text change করা. -->
+                <p class="text-textColorLight mb-4 line-clamp-3">
+                    <!-- line-clamp → নির্দিষ্ট সংখ্যক লাইনের পর text কাটে (... দেখায়). -->
+                    <!-- Long description short preview দেখানোর জন্য. -->
+                    Minimalism is a design philosophy that emphasizes simplicity and functionality. It focuses on
+                    removing unnecessary elements and creating clean, uncluttered spaces. In this article, we will
+                    explore the principles of minimalism and how it can enhance our lives and surroundings.
+                </p>
+                <div class="text-sm text-textColorLight mt-auto">
+                    Alex Johnson - <time datetime="2024-06-01">June 1, 2024</time>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <nav class="mt-14 flex items-center justify-center">
+        <ul class="inline-flex items-center gap-2 bg-cardColor border border-gray-200 rounded-full px-3 py-2 shadow-sm">
+            <!-- left arrow -->
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">&larr;</a></li>
+
+            <!-- For selected page -->
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-white bg-primaryColor font-semibold hover:text-primaryColor
+                  hover:bg-indigo-50 transition-colors">1</a>
+            </li>
+            
+            <!-- For rest of not selected page -->
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">2</a>
+            </li>
+
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">3</a>
+            </li>
+
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">4</a>
+            </li>
+
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">5</a>
+            </li>
+
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">6</a>
+            </li>
+
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">7</a>
+            </li>
+
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">8</a>
+            </li>
+
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors hover:bg-indigo-50">9</a>
+            </li>
+            <!-- right arrow -->
+            <li><a href="#" class="h-9 w-9 rounded-full inline-flex items-center justify-center
+                 text-textColorLight hover:text-primaryColor transition-colors
+                  hover:bg-indigo-50">&rarr;</a></li>
+        </ul>
+    </nav>
+    <footer class="bg-cardColor border-t border-gray-200 mt-20">
+        <div class="max-w-screen-2xl mx-auto p-6 md:p-8 text-center text-sm text-textColorLight">
+            <span class="font-bold text-primaryColor block mb-2 cursor-pointer">My Blog.</span>
+            <!-- block diye logo ta ke full block jaiga dew holo jate logo upor e thake , copyright text niche thake -->
+            <span>&copy; 2024 My Blog. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html
