@@ -1,0 +1,205 @@
+// # Function Concept
+// A function is a reusable block of code used to perform a specific task.
+// Instead of writing the same code again and again, we create a function once and use it many times.
+
+// # Real Life Examples:
+// - bKash balance check
+// - Login system
+// - Calculator
+// - Search button
+// - Send message system
+
+// # Dynamic Function Idea:
+// A function can take different data as input.
+
+// Example:
+// - Hello Joy
+// - Hello Smith
+// - Hello Rahim
+function greet(firstName) {
+  console.log("Hello, " + firstName);
+}
+greet("Alice!");
+greet("Bob!");
+greet("Charlie!");
+_____________________________________________________
+// Returning a value from a function
+function square(number) {
+  let sqr = number * number;
+  return sqr;
+}
+let a = square(5);
+console.log(a);
+
+_____________________________________________________
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+let b = add(200, 500);
+console.log(b);
+
+_____________________________________________________
+function calculateDiscount(price, percentage) {
+  return price - price * (percentage / 100);
+}
+
+console.log(calculateDiscount(2000, 17));
+
+_____________________________________________________
+// anonymous function stored in a variable
+// Must important for dynamic coding
+const multiply = function (a, b) {
+  return a * b;
+};
+
+console.log(multiply(10, 4));
+
+// # Why Use:
+// - Function stored inside a variable.
+// - Useful for dynamic or flexible coding.
+
+_____________________________________________________
+setTimeout(function () {
+  console.log("This runs after 2 seconds.");
+}, 2000);
+
+// # Callback Function
+// # Why Use:
+// - Function passed into another function.
+// - Used for delay, events, async tasks.
+
+_____________________________________________________
+// # Arrow Function =>
+// Must important for dynamic coding 
+const add = (a, b) => a + b;
+
+_____________________________________________________
+// # Arrow Function with Multiple Examples
+const sum = (a, b) => a + b;
+const sqrNew = (num) => num * num;
+
+console.log(sum(10, 50));
+console.log(sqrNew(10));
+
+// # Why Use:
+// - Quick calculations.
+// - Simple one-line functions.
+
+_____________________________________________________
+// # Arrow Function with Template String
+const greetNew = (name) => {
+  let newStr = `Hello, ${name}`;
+  return newStr;
+};
+console.log(greetNew("Alice"));
+
+// # Why Use:
+// - Dynamic message creation.
+// - Common in login systems, greetings, dashboards.
+
+_____________________________________________________
+// ## forEach with Arrow Function
+
+const users = ["Ali", "Sara", "John"];
+users.forEach((user) => console.log(`Hi, ${user}`));
+
+_____________________________________________________
+// Immediately Invoked Function Expression (IIFE)
+// dont need to call the function, it will run immediately after definition
+// auto coming ad in website, auto pop up, auto run code
+// Must important for dynamic coding
+(function () {
+  console.log("This runs immediately!");
+})();
+_____________________________________________________
+// Genarator Function
+// yield mane porer step e jabe, porer step e jabe
+function* generator() {
+  yield "First value";
+  yield "Second value";
+  yield "Third value";
+}
+const gen = generator();
+console.log(gen.next().value);
+// use case for genarator function:
+// - Iterating over large data sets.
+// - Implementing custom iterators.
+// - Managing asynchronous code with generators and promises.
+// lazy loading, data stream, infinite sequence, state management, async control flow
+
+
+function* generateNumbers() {
+  let id = 1;
+
+  while (true) {
+    yield id++;
+  }
+}
+let gen = generateNumbers();
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+
+
+// ### Short Note:
+// - `function*` creates a generator function.
+// - `yield` pauses the function and returns a value.
+// - `next()` gets the next value step by step.
+// - Useful for ID generation, infinite values, pagination, etc.
+
+// ### Output:
+// { value: 1, done: false }
+// { value: 2, done: false }
+// { value: 3, done: false }
+// { value: 4, done: false }
+// value: 1
+// value: 2
+// value: 3
+// value: 4
+
+_____________________________________________________
+// Recursion Function
+// A function that calls itself is called a recursive function.
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+console.log(factorial(5)); // Output: 120
+
+// 1 return kora hoise karon 1 gun korle kiso jay ashe na 
+ //  kintu sudu rerurn korle undefined hoiye jabe
+_____________________________________________________
+// another example of recursion
+function countdown(n) {
+  if (n <= 0) return;
+
+  console.log(n);
+
+  countdown(n - 1);
+}
+
+// # Short Note:
+// - A recursive function calls itself.
+// - Used for repeated tasks step by step.
+// - `if (n <= 0)` is the stopping condition (base case).
+// - Without a stopping condition, recursion becomes infinite.
+_____________________________________________________
+// # Fibonacci Series using Recursion
+// another example of recursion
+
+function fibonacci(n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+console.log(fibonacci(6));
+
+// # Short Note:
+// - Fibonacci series: `0, 1, 1, 2, 3, 5, 8...`
+// - Each number is the sum of the previous two numbers.
+// - Recursive function calls itself repeatedly.
+_____________________________________________________
