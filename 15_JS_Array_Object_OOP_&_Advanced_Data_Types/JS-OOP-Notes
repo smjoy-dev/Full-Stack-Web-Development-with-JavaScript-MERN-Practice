@@ -1,0 +1,289 @@
+//Object
+// An object is a collection of properties, where each property is a key-value pair.
+
+class Person {
+    name = "Joy";
+    age = 0;
+}
+
+let p1 = new Person(); // Object Initialization
+console.log(p1.name);
+
+// Output: Joy
+
+/*
+Object: Class থেকে তৈরি হওয়া instance।
+Property key-value pair আকারে data store করে।
+*/
+
+____________________________________________
+
+class Person {
+    hello() {
+        console.log("object created");
+    }
+}
+
+let p1 = new Person();
+p1.hello();
+
+// Output: object created
+
+
+class Person {
+    constructor() {
+        console.log("object created");
+    }
+}
+
+let p1 = new Person();
+
+// Output: object created
+
+/*
+Normal Method: Object create করার পর manually call করতে হয় `p1.hello()`
+Constructor: Object create `new Person()` হলেই automatically call হয়।
+*/
+
+____________________________________________
+
+class MathHelper {
+    static PI = 3.1416;
+
+    static square(n) {
+        return n * n;
+    }
+}
+
+console.log(MathHelper.PI);
+console.log(MathHelper.square(5));
+
+// Output:
+// 3.1416
+// 25
+
+/*
+Static Method: Class এর সাথে directly call করা যায়, object create করার দরকার নেই।
+Common utility/helper function তৈরি করতে use হয়।
+*/
+
+____________________________________________
+
+// Encapsulation
+
+class Student {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    updateAge(newAge) {
+        this.age = newAge;
+    }
+}
+
+let s1 = new Student("Rahim", 30);
+s1.updateAge(35);
+console.log(s1.age);
+
+// Output: 35
+
+
+/*
+Encapsulation: Data এবং method একসাথে class এর ভিতরে রাখা হয়।
+Direct value change না করে method দিয়ে data control/update করা হয়।
+*/
+
+____________________________________________
+
+// Inheritance
+
+class Animal {
+    sound() {
+        console.log("Animal Sound");
+    }
+}
+
+class Dog extends Animal {
+
+}
+
+let d1 = new Dog();
+d1.sound();
+
+// Output: Animal Sound
+
+
+// Inheritance + super()
+
+class Vehicle {
+    constructor(brand) {
+        this.brand = brand;
+    }
+}
+
+class Car extends Vehicle {
+    constructor(brand, model) {
+        super(brand);
+        this.model = model;
+    }
+
+    info() {
+        console.log(`${this.brand} ${this.model}`);
+    }
+}
+
+const c = new Car("Toyota", "Corolla");
+c.info();
+
+// Output: Toyota Corolla
+
+
+/*
+Inheritance: Parent class এর property/method child class reuse করতে পারে।
+extends দিয়ে inheritance করা হয়।
+super() দিয়ে parent constructor call করা হয়।
+*/
+
+____________________________________________
+
+// Polymorphism - Method Overriding
+
+class Animal {
+    speak() {
+
+    }
+}
+
+class Dog extends Animal {
+    speak() {
+        console.log("Dog barks");
+    }
+}
+
+const d = new Dog();
+d.speak();
+
+// Output: Dog barks
+
+
+/*
+Polymorphism: Same method different behavior দিতে পারে।
+Method Overriding: Child class parent method নিজের মতো change করে।
+*/
+
+____________________________________________
+
+// Method Overloading Concept
+
+class Sum {
+    add(num1, num2) {
+        return num1 + num2;
+    }
+
+    add(num1, num2, num3) {
+        return num1 + num2 + num3;
+    }
+}
+
+let obj = new Sum();
+console.log(obj.add(10,20,30));
+
+// Output: 60
+
+
+/*
+Method Overloading: Same method name different parameter নিয়ে কাজ করা।
+JavaScript real overloading support করে না, last method execute হয়।
+*/
+
+____________________________________________
+
+// Default Value Concept
+
+function greet(name) {
+    if(name) {
+        console.log(`Hello ${name}`);
+    }
+    else {
+        console.log("Hello Guest");
+    }
+}
+
+greet();
+greet("Ostad");
+
+// Output:
+// Hello Guest
+// Hello Ostad
+
+
+/*
+Default Value: Value দিলে সেটা use হয়।
+Value না দিলে default behavior execute হয়।
+*/
+
+____________________________________________
+
+// Abstraction
+
+class Payment {
+    pay(amount) {
+        this.#process(amount);
+        console.log("Payment Done");
+    }
+
+    #process(amount) {
+        console.log("Processing " + amount);
+    }
+}
+
+let payment = new Payment();
+payment.pay(500);
+
+// Output:
+// Processing 500
+// Payment Done
+
+
+// Abstract Class Concept
+
+class Base {
+    constructor() {
+        if(new.target === Base) {
+            throw new Error("Cannot instantiate abstract class");
+        }
+    }
+
+    doTask() {
+        throw new Error("Method must be implemented");
+    }
+}
+
+class Derived extends Base {
+    doTask() {
+        console.log("Task Done");
+    }
+}
+
+const d1 = new Derived();
+d1.doTask();
+
+// Output: Task Done
+
+
+/*
+Abstraction: Internal details hide করে শুধু প্রয়োজনীয় feature show করা হয়।
+Parent শুধু structure দেয়, child class implementation করে।
+*/
+
+____________________________________________
+
+/*
+OOP 4 Main Concepts:
+
+Encapsulation → Data protect/control
+Inheritance → Parent code reuse
+Polymorphism → Same method different behavior
+Abstraction → Hide internal details
+*/

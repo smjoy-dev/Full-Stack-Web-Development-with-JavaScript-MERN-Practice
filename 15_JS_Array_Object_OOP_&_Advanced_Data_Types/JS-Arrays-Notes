@@ -1,0 +1,156 @@
+// Arrays
+
+let arr = [1, 2, 3, 4, 5];
+console.log(arr[0]);
+console.log(arr.length);
+____________________________________
+
+// adds an element to the end of the array
+arr.push(6);
+console.log(arr);
+
+____________________________________
+
+// removes the last element of the array
+arr.pop();
+console.log(arr);
+
+____________________________________
+
+// adds an element to the beginning of the array
+arr.unshift(0);
+console.log(arr);
+
+____________________________________
+
+// removes the first element of the array
+arr.shift();
+console.log(arr);
+
+____________________________________
+// foreach -> does not return a new array
+// iterating over an array
+// arrItem = every single value from arr
+
+// with arrow function
+arr.forEach((arrItem) => {
+    console.log(arrItem);
+});
+
+// or with regular function
+arr.forEach(function(arrItem) {
+    console.log(arrItem);
+});
+
+// or with a named function
+function printElement(arrItem) {
+    console.log(arrItem);
+}
+
+arr.forEach(printElement);
+
+____________________________________
+
+// Map -> return a new array
+// arrItem = every single value from arr
+// with arrow function
+
+let newArr = arr.map((arrItem) => {
+    return arrItem * 2;
+});
+
+// or with regular function
+let newArr2 = arr.map(function(arrItem) {
+    return arrItem * 2;
+});
+
+console.log(newArr);
+
+____________________________________
+
+// Filter -> return a new array
+// arrItem = every single value from arr
+// with arrow function
+
+let filteredArr = arr.filter((arrItem) => {
+    return arrItem % 2 === 0;
+});
+
+// or with regular function
+let filteredArr2 = arr.filter(function(arrItem) {
+    return arrItem % 2 === 0;
+});
+
+/*
+arrItem → arr array er current value ke represent kore
+
+Example:
+arr = [1,2,3,4,5]
+
+1st loop → arrItem = 1
+2nd loop → arrItem = 2
+3rd loop → arrItem = 3
+
+map() → প্রতিটা arrItem কে modify/change করে নতুন array বানায়
+
+filter() → condition দিয়ে কিছু arrItem select করে নতুন array বানায়
+*/
+
+____________________________________
+// reduce -> return a single value
+// arrItem = every single value from arr
+// with arrow function
+let sum = arr.reduce((accumulator, arrItem) => {
+    return accumulator + arrItem;
+}, 0);
+// accumulator → আগের loop এর return value কে represent করে
+// 0 → reduce function এর প্রথম loop এ accumulator এর initial value
+//accumulator er jaigai acc dilew hobe
+// or with regular function
+let sum2 = arr.reduce(function(accumulator, arrItem) {
+    return accumulator + arrItem;
+}, 0);
+
+//or
+let sum = numbers.reduce((acc, cur) => acc + cur, 0);
+console.log(sum);
+
+____________________________________
+// find -> return the first element that satisfies the condition
+// arrItem = every single value from arr
+let foundItem = arr.find((arrItem) => {
+    return arrItem > 3;
+});
+
+//or
+let result = numbers.find((num) => num >4);
+console.log(result);
+
+/*
+filter() → condition match করা সব value নিয়ে new array return করে.
+find() → condition match করা প্রথম value শুধু return করে.
+*/
+
+____________________________________
+// findIndex -> return the index of the first element that satisfies the condition
+// arrItem = every single value from arr
+let foundIndex = arr.findIndex((arrItem) => {
+    return arrItem > 3;
+});
+
+//or
+let result = numbers.findIndex((num) => num > 4);
+console.log(result);
+
+____________________________________
+// includes -> return true if the array includes the element, otherwise false
+let includes3 = arr.includes(3);
+console.log(includes3);
+
+____________________________________
+//some -> return true if at least one element satisfies the condition, otherwise false
+let hasEven = arr.some((arrItem) => {
+    return arrItem % 2 === 0;
+});
+
+____________________________________

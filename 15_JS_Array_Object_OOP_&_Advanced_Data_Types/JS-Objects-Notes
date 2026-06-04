@@ -1,0 +1,165 @@
+//Object
+// An object is a collection of properties, where each property is a key-value pair.
+
+let person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+console.log(person.name);
+//output: John 
+console.log(Object.keys(person));
+//output: ["name", "age", "city"]
+console.log(Object.values(person));
+//output: ["John", 30, "New York"]
+console.log(Object.entries(person));
+//output: [["name", "John"], ["age", 30], ["city", "New York"]]
+console.log(person.hasOwnProperty("name"));
+//output: true
+console.log(person.hasOwnProperty("salary"));
+//output: false
+
+____________________________________
+//set - collection of unique values, cant store duplicate values
+
+// let mySet = new Set([1,2,3]);
+let mySet = new Set();
+mySet.add(1);
+mySet.add(2);
+mySet.add(2);
+console.log(mySet);
+//output: Set(2) {1, 2}
+
+mySet.delete(2);
+console.log(mySet);
+//output: Set(1) {1}
+
+mySet.clear();
+console.log(mySet);
+//output: Set(0) {} 
+
+cosole.log(mySet.has(1));
+//output: false
+
+____________________________________
+//list is array - collection of values, can store duplicate values
+
+let myList = [1, 2, 2];
+console.log(myList);
+//output: [1, 2, 2]
+
+// convert set to array
+let myArray = Array.from(mySet);
+console.log(myArray);
+//output: []
+
+____________________________________
+//map - collection of key-value pairs, where keys can be of any data type
+
+let myMap = new Map();
+myMap.set("name", "John");
+myMap.set("age", 30);
+myMap.set("city", "New York");
+console.log(myMap.get("name"));
+//output: John
+
+/*
+Object → key-value data store করে, keys usually string/symbol হয়.
+Map → key-value data store করে, কিন্তু যেকোনো data type key হতে পারে এবং better for frequent add/remove.
+*/
+
+____________________________________
+// ----- Spread Operator -----
+
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let arr3 = [...arr1, ...arr2];
+console.log(arr3);
+// output: [1, 2, 3, 4]
+
+//Spread operator (...) → array/object er value gula copy ba merge korte use hoy.
+
+// ----- Spread Operator with Object -----
+
+let obj1 = { item1: 1 };  //key:value pair
+let obj2 = { ...obj1, item2: 2 };
+console.log(obj2);
+//output: { item1: 1, item2: 2 }
+
+// ----- Without Spread Operator -----
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let arr3 = [arr1, arr2];
+console.log(arr3);
+//output: [[1, 2], [3, 4]]
+
+____________________________________
+// -------- Rest Parameter --------
+
+function sum(num1, num2) {
+    return num1 + num2;
+}
+console.log(sum(20, 30, 50));
+//output: 50
+//not dynamic, for calculator
+
+/*Normal parameter → যতগুলো parameter দেওয়া হয় শুধু ততগুলো value নেয়.
+Extra value ignore করে. */
+
+function sum(...numbers) {
+    return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sum(20, 30, 50));
+//output: 100
+
+//or
+function sum(...numbers) {
+    let total = 0;
+    for (let num of numbers) {
+        total = total + num;
+    }
+    return total;
+}
+console.log(sum(20, 30, 50));
+
+____________________________________
+// -------- Strict Mode --------
+
+"use strict";
+
+let x = 10;
+console.log(x);
+
+/*
+use strict" → JavaScript ke strict rules follow korte bole.
+Common mistake/error easily catch korte help kore.
+*/
+____________________________________
+// -------- Set --------
+// UNION
+let a = new Set([1, 2, 3]);
+let b = new Set([4, 5, 6]);
+let union = new Set([...a, ...b]);
+console.log(union);
+//output: Set(6) {1, 2, 3, 4, 5, 6}
+
+____________________________________
+// INTERSECTION
+
+let intersection = new Set(
+    [...a].filter((x) => b.has(x))
+);
+console.log(intersection);
+//output: Set(0) {}
+
+____________________________________
+// DIFFERENCE
+
+let diff = new Set(
+    [...a].filter((x) => !b.has(x))
+);
+console.log(diff);
+//output: Set(3) {1, 2, 3}
+
+____________________________________
