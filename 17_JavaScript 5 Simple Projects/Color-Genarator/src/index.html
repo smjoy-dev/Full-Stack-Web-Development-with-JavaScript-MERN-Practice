@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Genarator</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body id="body" class="bg-gray-900 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded shadow-md text-center">
+        <input id="colorInput" type="text" placeholder="Enter a color (e.g., red, #ff0000)" class="border p-2 rounded mb-4 w-full">
+        <button onclick="generateColor()" class="bg-blue-500 text-white px-4 py-2 rounded">Generate Color</button>
+        <div id="colorDisplay" class="mt-4 h-32 w-full rounded"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

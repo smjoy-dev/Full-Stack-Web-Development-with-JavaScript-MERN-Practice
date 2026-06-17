@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body id="body" class="bg-gray-900 flex items-center justify-center h-screen">
+
+    <div class="bg-white p-6 rounded shadow w-80">
+        <div class="flex mb-4">
+            <input id="taskInput" type="text" placeholder="Add a new task" class="flex-1 p-2 border border-gray-300 rounded">
+            <button onclick="add()" id="addTaskBtn" class="ml-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer">Add</button>
+
+        </div>
+
+        <ul class="list"></ul>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
