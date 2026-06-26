@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-xl w-80">
+
+    <!-- Display -->
+     <input type="text" id="display" class="w-full bg-gray-700 text-white text-2xl text-right p-4 rounded-lg mb-4 outline-none" disabled
+     value="">
+     <!-- disable use kora hoise input field e user input na nite.  -->
+
+     <div class="grid grid-cols-4 gap-3">
+        <button class="bg-red-500 p-4 rounded-lg hover:bg-red-400" onclick="clearDisplay()">C</button>
+        <button class="bg-gray-400 p-4 rounded-lg hover:bg-gray-500" onclick="appendToDisplay('/')">/</button>
+        <button class="bg-gray-400 p-4 rounded-lg hover:bg-gray-500" onclick="appendToDisplay('X')">X</button>
+        <button class="bg-amber-500 p-4 rounded-lg hover:bg-amber-400 "onclick="deletelast()">DEL</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('7')">7</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('8')">8</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('9')">9</button>
+        <button class="bg-gray-400 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('+')">+</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('4')">4</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('5')">5</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('6')">6</button>
+        <button class="bg-gray-400 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('-')">-</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('1')">1</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('2')">2</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('3')">3</button>
+        <button class="bg-blue-600 row-span-2 p-4 rounded-lg hover:bg-blue-500 "onclick="calculate()">=</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('0')">0</button>
+        <button class="bg-gray-600 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('.')">.</button>
+        <button class="bg-gray-400 p-4 rounded-lg hover:bg-gray-500 "onclick="appendToDisplay('%')">%</button>
+        
+     </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
